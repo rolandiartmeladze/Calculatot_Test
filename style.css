@@ -6,9 +6,7 @@ body {
     transition: 3.5s ease-in-out;
     z-index: 5;
   }
-  .paneli{
-    display: flex;
-  }
+  .paneli{ display: flex; }
   .left{
     display: flex;
     width: 30%;
@@ -19,51 +17,47 @@ body {
   .rigth{
     height: 100vh;
     width: 70%;
-    /* background-color: rebeccapurple; */
     display: flex;
     align-items: center;
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-left: 50px;
-        /* background-color: rebeccapurple; */
   }
   .header{
     display: flex;
     align-content: center;
     flex-direction: column;
-    align-items: center;  }
+    align-items: center;  
+  }
 
 
   h3 {
-margin: 0px;
-padding: 0px;
-text-align: center;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
   h1{
-margin: 0px;
-padding: 0px;
-text-align: center;
-color: white;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: white;
 }
 .satauri{
-  background-color:  rgb(17, 29, 17);
-  justify-content: center;
-  width: 98%;
+    background-color:  rgb(17, 29, 17);
+    justify-content: center;
+    width: 98%;
     display: flex;
     height: 45%;
     align-items: center;
     border-radius: 40px 0 0 0;
-
 }
 
-p{
-    width: 80%;
+p{ width: 80%; }
 
-}
 .calculator_border{
-background-color: rgb(17, 29, 17);
-  overflow: hidden;
-  border-radius: 50px 0 0 20px;
+    background-color: rgb(17, 29, 17);
+    overflow: hidden;
+    border-radius: 50px 0 0 20px;
     display: flex;
     border: 8px double rgb(31, 53, 31);
     padding: 2px;
@@ -72,23 +66,22 @@ background-color: rgb(17, 29, 17);
     justify-content: center;
 }
 #input {
-  padding: 15px 0px 15px 0px;
-  width: 100%;
-  height: 60%;
-  outline: none;
-  margin: 0px;
-  font-size: x-large;
-  font-weight: bold;
-  background-color: rgba(85, 207, 231, 0.7);
-  border: none;
-  text-align: right;
-  border-radius: 5px 5px 5px 5px;
-  pointer-events:none;
-
-  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3) inset, 0px -3px 3px rgba(0, 0, 0, 0.3) inset;
-  user-select: auto;
-  color: white;
-  padding-right: 8px;
+    padding: 15px 0px 15px 0px;
+    width: 100%;
+    height: 60%;
+    outline: none;
+    margin: 0px;
+    font-size: x-large;
+    font-weight: bold;
+    background-color: rgba(85, 207, 231, 0.7);
+    border: none;
+    text-align: right;
+    border-radius: 5px 5px 5px 5px;
+    pointer-events:none;
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3) inset, 0px -3px 3px rgba(0, 0, 0, 0.3) inset;
+    user-select: auto;
+    color: white;
+    padding-right: 8px;
 }
 
 .inputi{
@@ -97,57 +90,44 @@ background-color: rgb(17, 29, 17);
     width: 98%;
     height: 50%;
     margin-bottom: 5px;
-    
 }
 button:hover {
   border-left:  red 2px solid;
   border-top:  red 2px solid;
   border-right:  yellow 2px solid;
   border-bottom:  yellow 2px solid;
-
   background-color: rgb(31, 53, 31);
   box-shadow: 0px 0px 15px 8px rgb(3, 218, 93) inset;
-
 }
 input[type="button"]:hover{
   border-left:  red 2px solid;
   border-top:  red 2px solid;
   border-right:  yellow 2px solid;
   border-bottom:  yellow 2px solid;
-
-
   background-color: rgb(31, 53, 31);
   box-shadow: 0px 0px 15px 8px rgb(3, 218, 93) inset;
-
 }
   input[type="button"]{
-
     border-left:  white 1px solid;
     border-top:  white 1px solid;
     border-right:  black 1px solid;
     border-bottom:  black 1px solid;
-  
-
     transition: 0.1s ease-in;
-  box-shadow: 0px 0px 15px 8px rgb(15, 13, 13) inset;
-  /* border: none; */
-  border-radius: 25px 25px 0px 25px;
-  cursor: pointer;
-  width: 23%;
-  height: 18%;
-  font-weight: bolder;
-  font-size: x-large;
-
+    box-shadow: 0px 0px 15px 8px rgb(15, 13, 13) inset;
+    border-radius: 25px 25px 0px 25px;
+    cursor: pointer;
+    width: 23%;
+    height: 18%;
+    font-weight: bolder;
+    font-size: x-large;
 }
     button {
       border-left:  white 1px solid;
       border-top:  white 1px solid;
       border-right:  black 1px solid;
       border-bottom:  black 1px solid;
-    
       transition: 0.3s ease-in;
       box-shadow: 0px 0px 15px 8px rgb(15, 13, 13) inset;
-      /* border: none; */
       border-radius: 25px 25px 0px 25px;
       cursor: pointer;
       width: 23%;
@@ -156,9 +136,7 @@ input[type="button"]:hover{
       font-size: x-large;
 }
 
-#toloba{
-    width: 48%;
-}
+#toloba{ width: 48%; }
 
 .bottom{
     height: 70%;
@@ -177,28 +155,26 @@ input[type="button"]:hover{
     }
 
 .view{
-  padding-top: 10px;
-padding-left: 8px;
-font-size: larger;
-font-weight: bolder;
-color:rgb(250, 1, 1);
-position: absolute;
-
+    padding-top: 10px;
+    padding-left: 8px;
+    font-size: larger;
+    font-weight: bolder;
+    color:rgb(250, 1, 1);
+    position: absolute;
 }
 
 .history{
-  background-color: rgba(22, 158, 185, 0.5);
-  overflow: hidden;
-  border-radius: 0px 0px 0px 0px;
-  display: flex;
-  border-top-right-radius: 30px;
-  /* border-left: 6px double rgb(250, 2, 2); */
-  border: 4px double rgb(31, 53, 31);
-  border-left: 1px solid black;
-  padding: 2px;
-  align-items:start;
-  flex-wrap: wrap;
-  justify-content: space-around;
+    background-color: rgba(22, 158, 185, 0.5);
+    overflow: hidden;
+    border-radius: 0px 0px 0px 0px;
+    display: flex;
+    border-top-right-radius: 30px;
+    border: 4px double rgb(31, 53, 31);
+    border-left: 1px solid black;
+    padding: 2px;
+    align-items:start;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 .history_header{ border-radius: 0 0 0 10px; cursor: default !important;}
 .edit:hover {border-bottom: 1px solid white; color: white;}
@@ -206,40 +182,33 @@ position: absolute;
 .close{border-radius: 0 0 10px 0;}
 
 .hist_head{
-transition: .5s ease-in-out;
-font-size: x-large;
-margin-top: 8px;
-border-bottom: 1px solid red;
-padding: 0px 10px 4px 10px;
-cursor: pointer;
+    transition: .5s ease-in-out;
+    font-size: x-large;
+    margin-top: 8px;
+    border-bottom: 1px solid red;
+    padding: 0px 10px 4px 10px;
+    cursor: pointer;
 }
 
 .history_head{
-padding-bottom: 10px;
-width: 100%;
-display: flex;
-justify-content: space-around;
+    padding-bottom: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
 }
 
 .history_body{
-  width: 90%;
-  height: auto;
-  max-height: 90%;
-
-  font-size: larger;
-font-weight: bolder;
-color:white;
-
-overflow: auto;
-scale: auto;
-
-
-  scrollbar-width: none;
+    width: 90%;
+    height: auto;
+    max-height: 90%;
+    font-size: larger;
+    font-weight: bolder;
+    color:white;
+    overflow: auto;
+    scale: auto;
+    scrollbar-width: none;
 }
-::-webkit-scrollbar {
-  display: none;
-}
-  /* background-color: red; */
+::-webkit-scrollbar { display: none; }
   @media screen and (max-width:750px){
 
     .left{
@@ -260,20 +229,14 @@ scale: auto;
       align-content: flex-start;
     }
     p{
+      text-align: center;
       font-size: 80%;
       width: 90%;
       margin: 0;
     }
-    h1{
-      font-size: 120%;
-    }
+    h1{ font-size: 120%; }
   }
-  @media screen and (max-width:1024px){
-    .history{
-      display: none;
-    }
-
-  }
+  @media screen and (max-width:1024px){ .history{ display: none; } }
 
 
   footer {

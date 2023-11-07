@@ -51,22 +51,15 @@ let left =document.getElementById('left');
 let view = document.getElementById('view');
 
 
-    var viwe_loc_x = left.offsetWidth + 65;
 
-if (window.innerWidth > 750) {
     view.style.left = "4px";
     view.style.top = "21%";
     
     
-} else {
-    view.style.left = "4px";
-}
 
 
 
-window.addEventListener('resize', () =>{
-    calculator_size();
-    })
+window.addEventListener('resize', () =>{ calculator_size(); })
 
 let sawyisi_mnishvneloba = "";
 let shesasrulebeli_operacia = "";

@@ -176,6 +176,7 @@ input[type="button"]:hover{
     }
 
 .view{
+  padding-top: 10px;
 padding-left: 8px;
 font-size: larger;
 font-weight: bolder;

@@ -252,9 +252,10 @@ scale: auto;
   
     .rigth{
       height: 90vh;
-
+      width: 90%;
       margin-left: 0px;
       justify-content: center;
+      align-content: flex-start;
     }
     p{
       font-size: 80%;

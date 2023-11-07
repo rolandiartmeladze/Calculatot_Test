@@ -43,6 +43,7 @@ text-align: center;
 margin: 0px;
 padding: 0px;
 text-align: center;
+color: white;
 }
 .satauri{
   background-color:  rgb(17, 29, 17);
@@ -62,7 +63,7 @@ p{
 .calculator_border{
 background-color: rgb(17, 29, 17);
   overflow: hidden;
-  border-radius: 50px 0 20px 20px;
+  border-radius: 50px 0 0 20px;
     display: flex;
     border: 8px double rgb(31, 53, 31);
     padding: 2px;
@@ -78,7 +79,7 @@ background-color: rgb(17, 29, 17);
   margin: 0px;
   font-size: x-large;
   font-weight: bold;
-  background-color:  rgb(10, 25, 15);
+  background-color: rgba(85, 207, 231, 0.7);
   border: none;
   text-align: right;
   border-radius: 5px 5px 5px 5px;
@@ -87,6 +88,7 @@ background-color: rgb(17, 29, 17);
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.3) inset, 0px -3px 3px rgba(0, 0, 0, 0.3) inset;
   user-select: auto;
   color: white;
+  padding-right: 8px;
 }
 
 .inputi{
@@ -94,6 +96,7 @@ background-color: rgb(17, 29, 17);
     width: 98%;
     height: 50%;
     margin-bottom: 5px;
+    
 }
 button:hover {
   border-left:  red 2px solid;
@@ -124,7 +127,7 @@ input[type="button"]:hover{
     border-bottom:  black 1px solid;
   
 
-    transition: 0.3s ease-in;
+    transition: 0.1s ease-in;
   box-shadow: 0px 0px 15px 8px rgb(15, 13, 13) inset;
   /* border: none; */
   border-radius: 25px 25px 0px 25px;
@@ -173,7 +176,7 @@ input[type="button"]:hover{
     }
 
 .view{
-/* background-color: green; */
+padding-left: 8px;
 font-size: larger;
 font-weight: bolder;
 color:rgb(250, 1, 1);
@@ -182,15 +185,14 @@ position: absolute;
 }
 
 .history{
-  margin-left: 4px;
-  background-color: rgb(17, 29, 17, 0.5);
+  background-color: rgba(22, 158, 185, 0.5);
   overflow: hidden;
   border-radius: 0px 0px 0px 0px;
   display: flex;
   border-top-right-radius: 30px;
   /* border-left: 6px double rgb(250, 2, 2); */
-  border-top: 8px double rgb(31, 53, 31);
-  border-right: 8px double rgb(31, 53, 31);
+  border: 4px double rgb(31, 53, 31);
+  border-left: 1px solid black;
   padding: 2px;
   align-items:start;
   flex-wrap: wrap;
@@ -236,6 +238,44 @@ scale: auto;
   display: none;
 }
   /* background-color: red; */
-  @media screen and (max-width:1024px){
+  @media screen and (max-width:750px){
 
+   
+    .left{
+      height: 10vh;
+      width: 100%;
+    }
+    .paneli{
+      align-items: center;
+      flex-direction: column;
+    }
+  
+    .rigth{
+      height: 90vh;
+
+      margin-left: 0px;
+      justify-content: center;
+    }
+    p{
+      width: 100%;
+      margin: 0;
+    }
+    h1{
+      font-size: 120%;
+    }
+  }
+  @media screen and (max-width:1024px){
+    .history{
+      display: none;
+    }
+
+  }
+
+
+  footer {
+    position: fixed;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: bolder;
   }

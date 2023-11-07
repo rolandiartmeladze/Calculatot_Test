@@ -240,8 +240,8 @@ scale: auto;
   /* background-color: red; */
   @media screen and (max-width:750px){
 
-   
     .left{
+      margin-top: 10px;
       height: 10vh;
       width: 100%;
     }
@@ -257,7 +257,8 @@ scale: auto;
       justify-content: center;
     }
     p{
-      width: 100%;
+      font-size: 80%;
+      width: 90%;
       margin: 0;
     }
     h1{

@@ -9,27 +9,40 @@ function Shadow() {
         document.body.style.boxShadow = "0 0 20px 1px inset" + shadow_feri;    
 }
 
-function calulator_size(){
-
+function calculator_size() {
+    // Get the calculator border element
     let calculator_border = document.getElementById('calculator_border');
-     calculator_border.style.transition = "ease-in-out 1.5s";
-    let width = document.body.offsetWidth;
-    let height = document.body.offsetHeight;
-    let calculat_width = width*0.6;
-    let calculat_height = calculat_width*1.5;
 
+    // Get the width and height of the window
+    let windowWidth = window.innerWidth;
+    let windowHeight = window.innerHeight;
+
+    // Calculate the width and height for the calculator
+    let calculat_width;
+    if (windowWidth <= 750) {
+        calculat_width = windowWidth * 1;
+    } else {
+        calculat_width = windowWidth * 0.6;
+    }
+    
+    let calculat_height = calculat_width * 1.5;
+
+    // Set the transition property with a valid timing function and duration
+    calculator_border.style.transition = "ease-in-out 1.5s";
+
+    // Set the width and height of the calculator
     calculator_border.style.width = calculat_width + "px";
     calculator_border.style.height = calculat_height + "px";
+
+    // Set max width and max height for the calculator
     calculator_border.style.maxHeight = "80%";
-    calculator_border.style.maxWidth = height * 0.5 +"px";
-    }
-
-
+    calculator_border.style.maxWidth = windowHeight * 0.5 + "px";
+}
 
 
         
 function calulator(){
-    Shadow(); calulator_size();
+    Shadow(); calculator_size();
 
 
 
@@ -52,7 +65,7 @@ view.style.top = "21%";
 window.addEventListener('resize', () =>{
     var viwe_loc_x = left.offsetWidth + 65;
     view.style.left = viwe_loc_x +"px";
-    calulator_size();
+    calculator_size();
     })
 
 let sawyisi_mnishvneloba = "";

@@ -17,8 +17,6 @@ function calulator_size(){
     let height = document.body.offsetHeight;
     let calculat_width = width*0.6;
     let calculat_height = calculat_width*1.5;
-    console.log(calculat_width)
-    console.log(calculat_height)
 
     calculator_border.style.width = calculat_width + "px";
     calculator_border.style.height = calculat_height + "px";

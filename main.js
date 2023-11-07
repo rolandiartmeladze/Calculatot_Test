@@ -10,14 +10,11 @@ function Shadow() {
 }
 
 function calculator_size() {
-    // Get the calculator border element
     let calculator_border = document.getElementById('calculator_border');
 
-    // Get the width and height of the window
     let windowWidth = window.innerWidth;
     let windowHeight = window.innerHeight;
 
-    // Calculate the width and height for the calculator
     let calculat_width;
     if (windowWidth <= 750) {
         calculat_width = windowWidth * 1;
@@ -27,14 +24,11 @@ function calculator_size() {
     
     let calculat_height = calculat_width * 1.5;
 
-    // Set the transition property with a valid timing function and duration
     calculator_border.style.transition = "ease-in-out 1.5s";
 
-    // Set the width and height of the calculator
     calculator_border.style.width = calculat_width + "px";
     calculator_border.style.height = calculat_height + "px";
 
-    // Set max width and max height for the calculator
     calculator_border.style.maxHeight = "80%";
     calculator_border.style.maxWidth = windowHeight * 0.5 + "px";
 }
@@ -57,14 +51,25 @@ let left =document.getElementById('left');
 let view = document.getElementById('view');
 
 
-var viwe_loc_x = left.offsetWidth + 65;
+    var viwe_loc_x = left.offsetWidth + 65;
 
-view.style.left = viwe_loc_x +"px";
-view.style.top = "21%";
+if (window.innerWidth > 750) {
+    view.style.left = viwe_loc_x +"px";
+    view.style.top = "21%";
+    window.addEventListener('resize', () =>{
+        var viwe_loc_x = left.offsetWidth + 65;
+        view.style.left = viwe_loc_x +"px";
+        calculator_size();
+        })
+    
+    
+} else {
+    view.style.left = "35px";
+}
+
+
 
 window.addEventListener('resize', () =>{
-    var viwe_loc_x = left.offsetWidth + 65;
-    view.style.left = viwe_loc_x +"px";
     calculator_size();
     })
 

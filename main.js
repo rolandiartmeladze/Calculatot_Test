@@ -54,17 +54,12 @@ let view = document.getElementById('view');
     var viwe_loc_x = left.offsetWidth + 65;
 
 if (window.innerWidth > 750) {
-    view.style.left = viwe_loc_x +"px";
+    view.style.left = "4px";
     view.style.top = "21%";
-    window.addEventListener('resize', () =>{
-        var viwe_loc_x = left.offsetWidth + 65;
-        view.style.left = viwe_loc_x +"px";
-        calculator_size();
-        })
     
     
 } else {
-    view.style.left = "35px";
+    view.style.left = "4px";
 }
 
 

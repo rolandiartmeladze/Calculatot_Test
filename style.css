@@ -92,6 +92,7 @@ background-color: rgb(17, 29, 17);
 }
 
 .inputi{
+    position: relative;
     display: flex;
     width: 98%;
     height: 50%;
